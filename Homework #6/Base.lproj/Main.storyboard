@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RCb-b3-GKR">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Distance-->
+        <scene sceneID="aqf-2G-ty6">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDd-5V-Hqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="sYj-RR-Dh0" customClass="ViewController" customModule="Homework__6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uHt-MG-Yti">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- - - - - - - - - - - - " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="461-rh-SBN">
+                                <rect key="frame" x="16" y="332" width="361" height="119"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cH0-Mm-6uR"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="461-rh-SBN" firstAttribute="top" secondItem="cH0-Mm-6uR" secondAttribute="top" constant="273" id="8JC-l7-I65"/>
+                            <constraint firstItem="cH0-Mm-6uR" firstAttribute="bottom" secondItem="461-rh-SBN" secondAttribute="bottom" constant="318" id="Am6-8L-2H7"/>
+                            <constraint firstItem="461-rh-SBN" firstAttribute="trailing" secondItem="uHt-MG-Yti" secondAttribute="trailingMargin" id="Wk1-bg-4vW"/>
+                            <constraint firstItem="461-rh-SBN" firstAttribute="leading" secondItem="uHt-MG-Yti" secondAttribute="leadingMargin" id="mVi-RH-O14"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Distance" image="flag.2.crossed" catalog="system" selectedImage="flag.2.crossed.fill" id="KIT-fc-1Du"/>
+                    <connections>
+                        <outlet property="distanceLabel" destination="461-rh-SBN" id="Ic1-dk-Sp1"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1681.679389312977" y="282.3943661971831"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="SPa-qM-8gF">
+            <objects>
+                <viewController id="3Uj-wC-xzv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vWP-74-wrJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KigaliConventionCentre" translatesAutoresizingMaskIntoConstraints="NO" id="0rI-Mc-jDf">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="krB-e1-cKy"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="0rI-Mc-jDf" firstAttribute="top" secondItem="krB-e1-cKy" secondAttribute="top" id="FqC-dh-8Ze"/>
+                            <constraint firstItem="krB-e1-cKy" firstAttribute="trailing" secondItem="0rI-Mc-jDf" secondAttribute="trailing" id="dsG-Yc-kqW"/>
+                            <constraint firstItem="0rI-Mc-jDf" firstAttribute="leading" secondItem="krB-e1-cKy" secondAttribute="leading" id="gSU-aB-QrZ"/>
+                            <constraint firstItem="krB-e1-cKy" firstAttribute="bottom" secondItem="0rI-Mc-jDf" secondAttribute="bottom" id="iQ1-mM-DVt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="9jT-SB-KkW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L0e-Uv-kDO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="-368"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kkM-M1-DGC">
+            <objects>
+                <tabBarController id="RCb-b3-GKR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R3Y-1t-MAL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3Uj-wC-xzv" kind="relationship" relationship="viewControllers" id="UjH-nH-P4k"/>
+                        <segue destination="sYj-RR-Dh0" kind="relationship" relationship="viewControllers" id="UtT-mc-UoK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ju9-ha-umX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="KigaliConventionCentre" width="1920" height="1440"/>
+        <image name="flag.2.crossed" catalog="system" width="128" height="72"/>
+        <image name="flag.2.crossed.fill" catalog="system" width="128" height="72"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
